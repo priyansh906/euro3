@@ -48,7 +48,7 @@
         if (Hls.isSupported()) {
           var hls = new Hls();
           hls.loadSource(
-            "https://play1nm.hnyongshun.cn/live/ballbar_32930.m3u8"
+            "https://a74.azplay.me/hls/streama224108/index.m3u8?cst=f8a5285beff3c84c9a1b6fb25fe7a384"
           );
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -56,7 +56,7 @@
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src =
-            "https://play1nm.hnyongshun.cn/live/ballbar_32930.m3u8";
+            "https://a74.azplay.me/hls/streama224108/index.m3u8?cst=f8a5285beff3c84c9a1b6fb25fe7a384";
           video.addEventListener("canplay", function () {
             video.play();
           });

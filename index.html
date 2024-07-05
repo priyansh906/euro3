@@ -48,7 +48,7 @@
         if (Hls.isSupported()) {
           var hls = new Hls();
           hls.loadSource(
-            "https://s6.hopslan.com/servus1/index.m3u8"
+            "https://s6.hopslan.com/orfx3/index.m3u8"
           );
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -56,7 +56,7 @@
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src =
-            "https://s6.hopslan.com/servus1/index.m3u8";
+            "https://s6.hopslan.com/orfx3/index.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
